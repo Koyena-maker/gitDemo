@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Book Flight" value="https://www.spicejet.com/"/>
+  <parameter name="Book Hotel" value="https://www.makemytrip.com/"/>
+  <test thread-count="5" name="Eat(failed)">
+    <parameter name="Book Flight" value="https://www.goindigo.in/"/>
+    <parameter name="Book Hotel" value="https://www.ixigo.com/"/>
+    <classes>
+      <class name="MODULES.eating">
+        <methods>
+          <include name="tropiOrders"/>
+          <include name="bfre"/>
+          <include name="endTest"/>
+          <include name="begg"/>
+          <include name="tropiDashboard"/>
+          <include name="beginTest"/>
+        </methods>
+      </class> <!-- MODULES.eating -->
+    </classes>
+  </test> <!-- Eat(failed) -->
+</suite> <!-- Failed suite [Suite] -->

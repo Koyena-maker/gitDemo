@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="Book Flight1" value="https://www.spicejet.com/"></parameter>
+	<parameter name="Book Hotel1" value="https://www.makemytrip.com/"></parameter>
+  <test  name="Eat">
+	  <parameter name="Book Flight2" value="https://www.goindigo.in/"></parameter>
+	  <parameter name="Book Hotel2" value="https://www.ixigo.com/"></parameter>
+    <classes>
+      <class name="MODULES.eating">
+		  <methods>
+			  <include name="tropi.*"/>
+		  </methods>
+      </class>
+       </classes>
+  </test> <!-- Test -->
+  <test  name="Education">
+	  <parameter name="Book Flight3" value="https://www.airindia.com/"></parameter>
+	  <parameter name="Book Hotel3" value="https://www.goibibo.com/"></parameter>
+    <classes>
+      <class name="MODULES.education">
+		   <methods>
+			  <include name="edu.*"/>
+		  </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
